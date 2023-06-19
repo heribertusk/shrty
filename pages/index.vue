@@ -1,22 +1,22 @@
 <script lang="ts" setup>
 useHead({
-  title: "Shrtybase - Nuxt 3 + Supabase URL Shortener with analytics",
+  title: "Shrty - URL Shortener",
 });
 </script>
 
 <template>
-  <section class="h-screen grid place-items-center">
-    <div class="max-w-3xl mx-auto text-center">
-      <h1 class="heading text-5xl lg:text-6xl font-bold">
+  <section class="grid place-items-center h-screen">
+    <div class="mx-auto max-w-3xl text-center">
+      <h1 class="text-5xl font-bold lg:text-6xl heading">
         Make your links tiny and easy to share with tnyl
       </h1>
-      <p class="text-lg w-10/12 md:w-2/3 mx-auto my-10">
+      <p class="my-10 mx-auto w-10/12 text-lg md:w-2/3">
         Transform your long, cumbersome URLs into short and shareable links with
         TinyLink
       </p>
-      <NuxtLink :to="{ name: 'dashboard' }" class="btn text-sm"
-        >Short Now</NuxtLink
-      >
+      <NuxtLink :to="{ name: 'dashboard' }" class="text-sm btn">
+        Short Now
+      </NuxtLink>
     </div>
   </section>
 </template>
